@@ -1,3 +1,95 @@
+$(document).ready(function() {
+    $('.btn-menu, .btn-menu a').on('click', function(e) {
+        e.preventDefault();
+        $('.mobile-menu').addClass('active');
+        $('.dim').addClass('active');
+        $('body').css('overflow', 'hidden');
+    });
+
+    function closeMenu() {
+        $('.mobile-menu').removeClass('active');
+        $('.dim').removeClass('active');
+        $('body').css('overflow', 'auto');
+    }
+
+    $('.btn-close, .dim').on('click', function() {
+        closeMenu();
+    });
+    
+    $('.m-gnb .main-title').on('click', function(e) {
+        e.preventDefault();
+
+        let $parentLi = $(this).parent('li');
+        let $sub = $(this).next('.m-sub');
+
+        $parentLi.siblings('li').removeClass('open').find('.m-sub').stop().slideUp(250);
+        $parentLi.toggleClass('open');
+        $sub.stop().slideToggle(250);
+    });
+});
+
+// HTML에 메뉴가 있으면 그대로 사용하고, 빈 컨테이너가 있을 때만 불러옵니다.
+async function setupFloating() {
+    let floating = document.querySelector(".floating");
+    const container = document.querySelector("#floating-container");
+
+    if (!floating && container) {
+        try {
+            const response = await fetch("floating.html");
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            container.innerHTML = await response.text();
+            floating = container.querySelector(".floating");
+        } catch (error) {
+            console.error("플로팅 메뉴를 불러오지 못했습니다.", error);
+            return;
+        }
+    }
+    if (!floating) return;
+
+    function handleFloating() {
+        const mainVisual = document.querySelector(".main-visual");
+        const footer = document.querySelector("footer");
+        // 비주얼이 없는 서브 페이지에서는 처음부터 표시합니다.
+        const pastVisual = !mainVisual || mainVisual.getBoundingClientRect().bottom <= 0;
+        const beforeFooter = !footer || footer.getBoundingClientRect().top > window.innerHeight;
+        floating.classList.toggle("show", pastVisual && beforeFooter);
+    }
+
+    window.addEventListener("scroll", handleFloating, { passive: true });
+    window.addEventListener("load", handleFloating);
+    window.addEventListener("resize", handleFloating);
+
+    const goTop = floating.querySelector(".go-top");
+    if (goTop) {
+        goTop.addEventListener("click", function (event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    }
+    handleFloating();
+}
+
+// head에서 불러와도 HTML 생성 후 실행합니다.
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", setupFloating, { once: true });
+} else {
+    setupFloating();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //------------활동----------------------
         const counters = document.querySelectorAll(".count");
         let animated = false;
@@ -81,6 +173,12 @@
         }
 
         window.addEventListener("scroll", responseCountUp);
+
+
+
+
+
+
         
 //----------------------------------전체활동----------------------------
         $(document).ready(function(){
@@ -97,6 +195,12 @@
                     "transform": "translateX(" + (distance * i) + "px)"
                 });
             }
+
+
+
+
+
+
             
             const $list = $(".activities-list");
             let isMoving = false;
@@ -107,6 +211,7 @@
                     // .css("transform", "");
 
                 $list.children("li").eq(1).addClass("is-active");
+
             }
 
             setActive();
@@ -152,6 +257,7 @@
                     isMoving = false;
                 });
 
+
                 if(i === 0){
                     i = count -1;
                 }else{
@@ -160,9 +266,11 @@
 
                 moveBar();
             });
+
             setInterval(function(){
                 $(".next").trigger("click");
             },3500);
+
         });
 
 

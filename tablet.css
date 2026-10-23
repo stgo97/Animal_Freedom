@@ -1,0 +1,1387 @@
+/*-----------테블릿 반응형------------*/
+@media (max-width: 768px)  {
+/*----------------메인비주얼--------------*/
+.animal-main {
+    width: 100%;
+    height: 424px;
+}
+.main-slide .slide {
+    background-position: center center;
+    background-size: cover;
+}
+.main-text {
+    width: 446px;
+    margin-left: 42px;
+    margin-top: 70px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.main-text p:first-child {
+    font-size: 16px;
+    font-weight: 500;
+}
+.main-text h1 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-top: 6px;
+}
+.main-text p:nth-of-type(2) {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 12px;
+}
+.animal-main .main-button {
+    width: 170px;
+    height: 30px;
+    margin-top: 14px;
+    gap: 10px;
+    font-size: 14px;
+}
+.main-button img {
+    width: 16px;
+}
+/*-----------------강아지 입양 타이틀-------------*/
+.animal-adopt {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adopt-text {
+    text-align: center;
+}
+.adopt-text > img {
+    width: 30px;
+}
+.adopt-text > p:first-of-type {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #2b4b8b;
+}
+.adopt-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+}
+.adopt-title img {
+    width: 40px;
+    right: 100%;
+    margin-right: -60px;
+}
+.adopt-title h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #f16669;
+}
+.adopt-text > p:last-child {
+    font-size: 16px;
+    margin-top: 25px;
+    color: #151515;
+}
+/*-----------------강아지 케러셀----------*/
+.dog-carousel {
+    width: 100%;
+}
+.dog-list {
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+.dog-track {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.dog-card {
+    flex: 0 0 33.3333%;
+    height: 100%
+}
+.dog-content {
+    height: 100%;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dog-content h3 {
+    font-size: 24px;
+    top: 0;
+    margin-bottom: 15px;
+}
+.dog-content > img {
+    width: auto;
+    height: 180px;
+    max-width: 100%;
+    object-fit: contain;
+}
+.noa .dog-content > img {
+    transform: scale(0.85);
+}
+.dog-info {
+    width: 100%;
+    margin-top: 20px;
+}
+.dog-info li {
+    display: flex;
+    align-items: center;    
+    font-size: 14px;
+    line-height: 1.7;
+    margin-left: 0;
+    gap: 5px;
+    white-space: nowrap;
+}
+.dog-info li img {
+    width: 15px;
+    margin-top: 0px;
+    flex-shrink: 0;
+}
+.dog-info li:nth-child(n+4) {
+    display: none;
+}
+.dog-control-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+    margin-top: 35px;
+}
+.dog-control-wrap .animal-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #f16669;
+}
+.dog-prev,
+.dog-next {
+    font-size: 36px;
+}
+.dog-button-wrap {
+    margin-top: 0;
+}
+/*--------------고양이 입양-----------*/
+.cat-list {
+    width: 90%;
+    margin:  100px auto 0;
+    display: flex;
+    gap: 15px;
+}
+.cat-card {
+    border-radius: 20px;
+}
+.nari {
+    width: 42%;
+    height: 500px;
+    flex-shrink: 0;
+}
+.nari-img {
+    width: 180px;
+    height: 260px;
+    border-radius: 100px 100px 15px 15px;
+    margin-bottom: 25px;
+}
+.nari h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.nari .cat-info li {
+    font-size: 14px;
+    line-height: 1.8;
+}
+.cat-right {
+    width: 58%;
+    gap: 10px;
+}
+.cat-right .cat-card {
+    height: 160px;
+    border-radius: 20px;
+}
+.cat-right .cat-img {
+    width: 45%;
+    height: 140px;
+}
+.cat-img::before {
+    width: 85px;
+    height: 110px;
+    border-radius: 50px 50px 12px 12px;
+}
+.cat-img img {
+    width: 150px;
+    height: 150px;
+}
+.cat-right .cat-text{
+    width: 55%;
+}
+.cat-right h3 {
+    font-size: 20px;
+    margin: 0 0 10px 20px;
+}
+.cat-right .cat-info {
+    margin-left: 10px;
+}
+.cat-right .cat-info li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+.cat-info li img,
+.cat-right .cat-info li img {
+    width: 18px;
+    height: 18px;
+}
+.cat-button-wrap {
+    margin-top: 35px;
+}
+.cat-button-wrap .animal-button {
+    font-size: 18px;    
+    padding: 10px 20px;
+    border-width: 1px;
+}
+/*---------------입양후기---------*/
+.adoption-story {
+    width: 90%;
+    margin:  0 auto;
+    padding: 100px 0;
+}
+.adoption-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+.adoption-text {
+    width: 35%;
+    flex-shrink: 0;
+}
+.adoption-text>p:first-child {
+    font-size: 20px;
+}
+.adoption-text h2 {
+    font-size: 26px;
+    line-height: 1.4;
+    margin-top: 25px;
+}
+.adoption-text>p:last-child {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 25px;
+    word-break: keep-all;
+}
+/*-------------패밀리카드------------*/
+.family-card {
+    width: 65%;
+    height: auto;
+    min-width: 0;
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.family-top h3,
+.family-top p {
+    font-size: 1rem;
+}
+.family-content {
+    gap: 15px;
+    margin-top: 20px;
+}
+.family-img {
+    flex-shrink: 0;
+}
+.family-img img{
+    width: 120px;
+    height: 160px;
+    border-radius: 12px;
+}
+.family-text {
+    min-width: 0;
+}
+.family-text h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.rumi-info {
+    gap: 30px;
+}
+.rumi-info li {
+    font-size: 14px;
+    line-height: 1.8;
+    white-space: nowrap;
+}
+.together {
+    position: static;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.rumi-review {
+    margin-top: 20px;
+    padding-top: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: normal;
+    word-break: keep-all;
+    display: none;
+}
+/*------------입양후기 카드------------*/
+
+.adopt-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.adopt-card {
+    width: calc((100% - 30px) / 3);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.adopt-content {
+    display: flex;
+    gap: 10px;
+}
+
+.adopt-content > img {
+    width: 75px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.adopt-info li:first-child {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.adopt-info li:nth-child(2) {
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.adopt-info li:last-child {
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.adopt-card > p {
+    font-size: 12px;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+/*------------입양후기 탭 메뉴------------*/
+
+.tab-menu {
+    margin-top: 70px;
+}
+
+.tab-button {
+    gap: 10px;
+}
+
+.tab-button button {
+    font-size: 16px;
+    padding: 6px 15px;
+    border: 1.5px solid #2B4B8B;
+    border-radius: 30px;
+}
+
+/*------------최신순------------*/
+
+.sort-button {
+    font-size: 16px;
+    gap: 8px;
+}
+
+.sort-button img {
+    width: 10px;
+}
+
+/*------------후기 더보기------------*/
+
+.adopt-button {
+    width: 200px;
+    height: 48px;
+    line-height: 46px;
+    margin: 70px auto 0;
+    font-size: 20px;
+    border-radius: 30px;
+}
+/*------------태블릿 후원 섹션------------*/
+
+.donation-button {
+    width: 100%;
+    height: 1070px;
+    padding: 0;
+    background-color: #e7d2ef;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.donation-zone {
+    width: 100%;
+    max-width: 768px;
+    height: 100%;
+    position: relative;
+}
+
+/* 상단 텍스트 */
+.donate-top {
+    position: absolute;
+    top: 50px;
+    left: 28%;
+    transform: none;
+    width: 65%;
+    text-align: left;
+    z-index: 2;
+}
+
+.donate-top h2 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.donate-top p {
+    font-size: 16px;
+    line-height: 1.1;
+    margin-top: 20px;
+}
+
+/* 동물 이미지 */
+.donate-img {
+    position: absolute;
+    width: 500px;
+    max-width: 100%;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.donate-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* 하단 후원 버튼 */
+.donate-bottom {
+    position: absolute;
+    top: 930px;
+    bottom: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    z-index: 3;
+}
+
+.donate-button {
+    padding: 12px 30px;
+    font-size: 22px;
+    font-weight: 700;
+    white-space: nowrap;
+    border-radius: 50px;
+}
+
+.donate-bottom p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+}
+}
+
+
+
+
+@media (max-width: 550px) {
+
+    /*------------메인 비주얼------------*/
+
+    .animal-main {
+        width: 100%;
+        height: 320px;
+        min-height: 0;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    /* 배경 슬라이드 */
+    .main-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-slide .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    /* 텍스트 박스 */
+    .animal-main .main-text {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        transform: none;
+
+        width: 220px;
+        max-width: 220px;
+        height: auto;
+        margin: 0 0 0 15px;
+        padding: 12px;
+        box-sizing: border-box;
+        margin-top: 30px;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.75);
+        z-index: 2;
+    }
+
+    /* 상단 문구 */
+    .animal-main .main-text p:first-child {
+        font-size: 14px;
+        line-height: 1.4;
+        font-weight: 500;
+        display: none;
+    }
+
+    /* 메인 제목 */
+    .animal-main .main-text h1 {
+        font-size: 16px;
+        line-height: 1.3;
+        margin-top: 8px;
+    }
+
+    /* 모바일 긴 설명 숨김 */
+    .animal-main .main-text p:nth-of-type(2) {
+        display: none;
+    }
+
+    /* 버튼 */
+    .animal-main .main-button {
+        width: 100%;
+        max-width: 140px;
+        height: 34px;
+        margin-top: 14px;
+        font-size: 13px;
+        gap: 8px;
+    }
+
+    .animal-main .main-button img {
+        width: 14px;
+        height: auto;
+    }
+    /*------------강아지 입양 타이틀------------*/
+    .animal-adopt {
+        width: 100%;
+        height: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .adopt-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 발바닥 아이콘 */
+    .adopt-text > img {
+        width: 28px;
+    }
+
+    /* ADOPT A FRIEND */
+    .adopt-text > p:first-of-type {
+        font-size: 14px;
+        margin-top: 15px;
+        color: #2B4B8B;
+    }
+
+    /* 강아지 아이콘 + 제목 */
+    .adopt-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 12px;
+        gap: 10px;
+    }
+
+    .adopt-title img {
+        position: static;
+        width: 25px;
+        margin: 0;
+    }
+
+    .adopt-title h2 {
+        margin-right: 40px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.4;
+        color: #f16669;
+    }
+
+    /* 하단 설명 */
+    .adopt-text > p:last-child {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-top: 25px;
+        color: #151515;
+        word-break: keep-all;
+    }
+        /*------------모바일 강아지 캐러셀------------*/
+    .dog-carousel {
+        width: 100%;
+    }
+
+    .dog-list {
+        width: 100%;
+        height: 365px;
+        overflow: hidden;
+    }
+
+    .dog-track {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .dog-card {
+        flex: 0 0 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .dog-content {
+        height: 100%;
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    /* 강아지 이름 */
+    .dog-content h3 {
+        font-size: 20px;
+        top: 0;
+        left: 0;
+        margin-bottom: 15px;
+    }
+
+    /* 강아지 이미지 */
+    .dog-content > img {
+        width: auto;
+        height: 190px;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    .noa .dog-content > img {
+        transform: scale(0.85);
+    }
+
+    /* 강아지 정보 */
+    .dog-info {
+        width: auto;
+        margin-top: 15px;
+    }
+
+    .dog-info li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: 0;
+        font-size: 16px;
+        line-height: 1.8;
+        white-space: nowrap;
+    }
+
+    .dog-info li img {
+        width: 20px;
+        margin-top: 0;
+        flex-shrink: 0;
+    }
+
+    .dog-info li:nth-child(4) {
+        display: none;
+    }
+
+    /* 캐러셀 버튼 */
+    .dog-control-wrap {
+        gap: 25px;
+        margin-top: 25px;
+    }
+
+    .dog-prev,
+    .dog-next {
+        font-size: 28px;
+    }
+
+    .dog-control-wrap .animal-button {
+        font-size: 14px;
+        padding: 8px 12px;
+        white-space: nowrap;
+    }
+
+        /*------------모바일 고양이 입양------------*/
+
+    .cat-list {
+        width: calc(100% - 36px);
+        margin: 70px auto 0;
+        display: block;
+    }
+
+    /* 모바일에서는 나리 숨기기 */
+    .cat-list .nari {
+        display: none;
+    }
+
+    /* 오른쪽 카드들을 세로 배치 */
+    .cat-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* 고양이 카드 */
+    .cat-right .cat-card {
+        width:90%;
+        height: 160px;
+        display: flex;
+        margin:  0 auto;
+        align-items: center;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    /* 이미지와 텍스트 가로 정렬 */
+    .cat-right .cat-content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* 고양이 이미지 영역 */
+    .cat-right .cat-img {
+        width: 53%;
+        height: 140px;
+        flex-shrink: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* 이미지 뒤 아치형 배경 */
+    .cat-right .cat-img::before {
+        width: 90px;
+        height: 110px;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 60px 60px 15px 15px;
+    }
+
+    /* 고양이 이미지 */
+    .cat-right .cat-img img {
+        width: 140px;
+        height: 140px;
+        object-fit: contain;
+    }
+
+    /* 고양이 정보 */
+    .cat-right .cat-text {
+        width: 52%;
+        min-width: 0;
+    }
+
+    .cat-right h3 {
+        font-size: 20px;
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+
+    .cat-right .cat-info {
+        margin-left: 0;
+    }
+
+    .cat-right .cat-info li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+        line-height: 1.8;
+        white-space: nowrap;
+    }
+
+    .cat-right .cat-info li img {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+    }
+
+    /* 고양이 더 만나보기 버튼 */
+    .cat-button-wrap {
+        margin-top: 35px;
+    }
+
+    .cat-button-wrap .animal-button {
+        font-size: 16px;
+        padding: 10px 20px;
+        border: 1px solid #F16669;
+    }
+
+    /*------------모바일 입양후기------------*/
+.adoption-story {
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 14px;
+    box-sizing: border-box;
+}
+
+/* 상단 타이틀과 패밀리카드 세로 배치 */
+.adoption-top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.adoption-text {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.adoption-text > p:first-child {
+    font-size: 16px;
+    color: #F16669;
+}
+
+.adoption-text h2 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 5px;
+    color: #2B4B8B;
+}
+
+/* 시안에 없는 하단 설명 숨기기 */
+.adoption-text > p:last-child {
+    display: none;
+}
+
+/*------------패밀리 카드------------*/
+.family-card {
+    width: 350px;
+    max-width: 100%;
+    height: 173px;
+    margin: 0 auto;
+    padding: 12px 15px;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.family-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.family-top h3 {
+    font-size: 14px;
+    color: #F16669;
+}
+
+.family-top p {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* 이미지 + 정보 */
+.family-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.family-img {
+    flex-shrink: 0;
+}
+
+.family-img img {
+    width: 95px;
+    height: 102px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.family-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.family-text h3 {
+    display: none;
+}
+
+.rumi-info {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.rumi-info li {
+    font-size: 12px;
+    line-height: 2;
+    white-space: nowrap;
+}
+
+/* 함께한 지 */
+.together {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    margin: 0;
+    font-size: 13px;
+    text-align: right;
+}
+
+.together span {
+    color: #F16669;
+}
+
+/* 태블릿에서 숨겼던 후기 유지 */
+.rumi-review {
+    display: none;
+}
+
+/*------------입양후기 탭 메뉴------------*/
+.tab-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.tab-button {
+    display: flex;
+    gap: 5px;
+}
+
+.tab-button button {
+    padding: 4px 9px;
+    font-size: 12px;
+    border: 1.5px solid #2B4B8B;
+    border-radius: 30px;
+}
+
+/* 시안에 없는 최신순 숨기기 */
+.sort-button {
+    display: none;
+}
+
+/*------------입양후기 카드------------*/
+.adopt-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.adopt-card {
+    width: 370px;
+    max-width: 100%;
+    padding: 20px 12px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+
+
+.adopt-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.adopt-content > img {
+    width: 100px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.adopt-info li:first-child {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.adopt-info li:nth-child(2) {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.adopt-info li:last-child {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #F16669;
+}
+
+/* 카드 하단 구분선 */
+.adopt-card > p {
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+    border-top: 1px solid #aaa;
+}
+
+/*------------하단 버튼------------*/
+.adopt-button {
+    width: 150px;
+    height: 36px;
+    line-height: 34px;
+    margin: 25px auto 0;
+    font-size: 14px;
+    border-radius: 30px;
+}
+
+/*------------모바일 후원 섹션------------*/
+
+.donation-button {
+    width: 100%;
+    height: auto;
+    padding: 80px 0 60px;
+    background-color: #e7d2ef;
+    display: block;
+    box-sizing: border-box;
+}
+
+.donation-zone {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*------------상단 텍스트------------*/
+
+.donate-top {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    text-align: center;
+}
+
+/* PC 제목 모바일에서 숨기기 */
+.donate-top h2 {
+    display: none;
+}
+
+/* 설명 문구 */
+.donate-top p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+    color: #151515;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.donate-top p span {
+    color: #F16669;
+}
+
+/*------------동물 이미지------------*/
+
+.donate-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donate-img {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+
+    width: 300px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.donate-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*------------하단 후원 버튼------------*/
+
+.donate-bottom {
+    position: static;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    transform: none;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-top: -20px;
+    z-index: auto;
+}
+
+.donate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F16669;
+    border: 2px solid transparent;
+    border-radius: 50px;
+
+    color: #FFFBF5;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.donate-button:hover {
+    background-color: transparent;
+    border-color: #F16669;
+    color: #F16669;
+}
+
+/* 시안에 없는 하단 설명 숨기기 */
+.donate-bottom p {
+    display: none;
+}
+
+
+    }
+
+
+@media (min-width: 769px) {
+  .head-inner { width: min(90%, 1620px); }
+  .head-inner > a { flex-shrink: 0; }
+  .head-inner > a img { max-width: 100%; height: auto; }
+  .m-menu { min-width: 0; }
+  .head-inner .etc { flex-shrink: 0; gap: clamp(12px, 1.56vw, 30px); }
+  .animal-main { height: clamp(540px, 55.3125vw, 1062px); }
+  .main-text { width: min(677px, 48vw); margin-left: clamp(24px, 5vw, 96px); padding: clamp(22px, 2.08vw, 40px) clamp(22px, 3.385vw, 65px); }
+  .main-text p:first-child { font-size: clamp(17px, 1.5625vw, 30px); }
+  .main-text h1 { font-size: clamp(24px, 2.083vw, 40px); margin-top: clamp(12px, 1.56vw, 30px); }
+  .main-text p:nth-of-type(2) { font-size: clamp(14px, 1.354vw, 26px); margin-top: clamp(14px, 1.82vw, 35px); }
+  .animal-main .main-button { width: min(303px, 100%); height: clamp(40px, 3.125vw, 60px); font-size: clamp(15px, 1.25vw, 24px); }
+  .animal-adopt { height: clamp(350px, 27.6vw, 530px); }
+  .adopt-title h2 { font-size: clamp(28px, 2.6vw, 50px); }
+  .adopt-text > p:last-child { font-size: clamp(16px, 1.25vw, 24px); }
+  .dog-list { height: clamp(440px, 41.667vw, 800px); }
+  .dog-content { padding: clamp(18px, 2.6vw, 50px) clamp(8px, 1.3vw, 25px); }
+  .dog-content h3 { top: 0; font-size: clamp(20px, 1.56vw, 30px); margin-bottom: clamp(15px, 3.65vw, 70px); }
+  .dog-content > img { height: clamp(185px, 18.23vw, 350px); max-width: 100%; object-fit: contain; }
+  .dog-info { margin-top: clamp(15px, 3.125vw, 60px); }
+  .dog-info li { margin-left: clamp(0px, 1.56vw, 30px); font-size: clamp(12px, 1.04vw, 20px); gap: clamp(4px, .42vw, 8px); }
+  .dog-info li img { width: clamp(16px, 1.82vw, 35px); }
+  .adoption-story { width: min(90%, 1680px); padding: clamp(75px, 7.8vw, 150px) 0; }
+  .adoption-top { gap: clamp(16px, 2.8vw, 55px); }
+  .adoption-text { flex: 1; min-width: 0; }
+  .adoption-text > p:first-child { font-size: clamp(19px, 2.08vw, 40px); }
+  .adoption-text h2 { font-size: clamp(24px, 2.6vw, 50px); margin-top: clamp(15px, 2.6vw, 50px); }
+  .adoption-text > p:last-child { font-size: clamp(14px, 1.56vw, 30px); margin-top: clamp(15px, 2.6vw, 50px); word-break: keep-all; }
+  .family-card { flex: 0 1 55%; width: auto; min-width: 0; height: auto; padding: clamp(16px, 2.08vw, 40px); }
+  .family-top h3, .family-top p { font-size: clamp(15px, 1.56vw, 30px); }
+  .family-content { gap: clamp(10px, 3.38vw, 65px); margin-top: clamp(10px, 1vw, 20px); }
+  .family-img { flex-shrink: 0; }
+  .family-img img { width: clamp(105px, 14.06vw, 270px); height: clamp(150px, 17.7vw, 340px); }
+  .family-text { min-width: 0; }
+  .family-text h3 { font-size: clamp(18px, 2.08vw, 40px); margin-bottom: clamp(10px, 1.82vw, 35px); }
+  .rumi-info { gap: clamp(7px, 2.6vw, 50px); }
+  .rumi-info li { font-size: clamp(12px, 1.56vw, 30px); white-space: nowrap; }
+  .together { position: static; margin-top: clamp(10px, 1.3vw, 25px); font-size: clamp(16px, 1.82vw, 35px); }
+  .rumi-review { margin-top: clamp(14px, 2.6vw, 50px); font-size: clamp(12px, 1.25vw, 24px); line-height: 1.4; white-space: normal; }
+  .adopt-content { gap: clamp(6px, 1.3vw, 25px); }
+  .adopt-content > img { width: 44%; height: clamp(105px, 9.9vw, 190px); flex-shrink: 0; }
+  .adopt-info { min-width: 0; }
+  .adopt-info li:first-child { font-size: clamp(14px, 1.25vw, 24px); }
+  .adopt-info li:nth-child(2) { font-size: clamp(10px, .83vw, 16px); }
+  .adopt-info li:last-child { font-size: clamp(12px, 1.04vw, 20px); margin-top: clamp(10px, 1.56vw, 30px); }
+  .donation-button { height: clamp(940px, 83.33vw, 1600px); }
+  .donation-zone { width: min(90%, 1400px); }
+  .donate-top { left: 32%; top: clamp(50px, 5.2vw, 100px); width: 68%; }
+  .donate-top h2 { font-size: clamp(24px, 2.08vw, 40px); }
+  .donate-top p { font-size: clamp(14px, 1.25vw, 24px); line-height: 1.4; }
+  .donate-img { width: min(750px, 66%); top: clamp(125px, 9.375vw, 180px); }
+  .donate-bottom { top: auto; bottom: clamp(55px, 5.2vw, 100px); left: 50%; }
+  .donate-button { font-size: clamp(20px, 2.08vw, 40px); padding: clamp(10px, .94vw, 18px) clamp(22px, 2.6vw, 50px); }
+  .donate-bottom p { font-size: clamp(14px, 1.04vw, 20px); }
+}
+
+/* 고양이: 나리 아치의 종횡비를 보존하고 오른쪽 3개와 높이를 공유 */
+@media (min-width: 551px) {
+  .cat-list { width: min(90%, 1280px); display: flex; align-items: stretch; gap: clamp(12px, 1.56vw, 30px); }
+  .nari { flex: 0 0 43%; width: auto; height: auto; min-width: 0; padding: clamp(12px, 2vw, 28px); box-sizing: border-box; }
+  .nari .cat-content { width: 100%; transform: none; }
+  .nari-img { position: relative; width: min(75%, 330px); height: auto; aspect-ratio: 330 / 390; border-radius: 45% 45% 25px 25px; margin-bottom: clamp(18px, 3.125vw, 60px); flex-shrink: 0; }
+  .nari-img img { position: absolute; inset: auto 0 0; width: 100%; height: 100%; object-fit: contain; }
+  .nari h3 { font-size: clamp(18px, 1.56vw, 30px); margin-bottom: clamp(12px, 1.56vw, 30px); }
+  .nari .cat-info li { font-size: clamp(12px, 1.25vw, 24px); line-height: 1.7; }
+  .nari .cat-info li img { width: clamp(16px, 1.82vw, 35px); height: auto; }
+  .cat-right { flex: 1 1 0; width: auto; min-width: 0; display: flex; flex-direction: column; gap: clamp(10px, 1.04vw, 20px); }
+  .cat-right .cat-card { flex: 1 1 0; min-height: 0; height: auto; width: 100%; }
+  .cat-right .cat-content { min-width: 0; }
+  .cat-right .cat-img { width: 47%; min-width: 0; height: clamp(130px, 10.4vw, 200px); }
+  .cat-right .cat-img img { width: min(250px, 100%); height: 100%; object-fit: contain; }
+  .cat-right .cat-text { width: 53%; min-width: 0; }
+  .cat-right h3 { margin: 0 0 clamp(7px, 1vw, 20px) clamp(4px, 3.5vw, 70px); font-size: clamp(17px, 1.56vw, 30px); }
+  .cat-right .cat-info { margin-left: clamp(0px, 1.8vw, 35px); }
+  .cat-right .cat-info li { font-size: clamp(12px, 1.25vw, 24px); line-height: 1.6; }
+  .cat-right .cat-info li img { width: clamp(15px, 1.56vw, 30px); height: auto; }
+  .cat-img::before { width: clamp(75px, 7.8vw, 150px); height: clamp(100px, 9.375vw, 180px); }
+}
+
+/* 769~1100: PC 메뉴/카드가 너무 촘촘해지지 않도록 */
+@media (min-width: 769px) and (max-width: 1100px) {
+  .head-inner > a img { width: clamp(90px, 11vw, 125px); }
+  .m-menu .gnb > li > a { font-size: clamp(14px, 1.5vw, 17px); }
+  .head-inner .etc { gap: 12px; font-size: 13px; }
+  .head-inner .etc > li:first-child { display: none; }
+  .dog-info li:nth-child(n+4) { display: none; }
+  .cat-right h3 { margin-left: 7px; }
+  .cat-right .cat-info { margin-left: 0; }
+  .cat-right .cat-info li { font-size: clamp(12px, 1.25vw, 14px); white-space: normal; }
+  .family-content { gap: 10px; }
+  .rumi-info { gap: 8px; }
+  .rumi-info li { font-size: clamp(12px, 1.35vw, 15px); }
+  .adopt-card { padding: 12px; }
+}
+
+/* 태블릿: 기존 768 디자인의 비율을 유지하며 551까지 연속 축소 */
+@media (min-width: 551px) and (max-width: 768px) {
+  .animal-main { height: clamp(350px, 55.2vw, 424px); }
+  .main-text { width: min(446px, 65%); margin-left: 5.5%; padding: clamp(14px, 2.6vw, 20px) clamp(17px, 3.9vw, 30px); }
+  .main-text p:first-child, .main-text p:nth-of-type(2) { font-size: clamp(12px, 2.08vw, 16px); }
+  .main-text h1 { font-size: clamp(17px, 2.6vw, 20px); }
+  .animal-adopt { height: clamp(310px, 46.875vw, 360px); }
+  .adopt-text > p:last-child { font-size: clamp(13px, 2.08vw, 16px); }
+  .dog-list { height: clamp(335px, 48.2vw, 370px); }
+  .dog-content > img { height: clamp(145px, 23.4vw, 180px); }
+  .dog-content h3 { font-size: clamp(19px, 3.125vw, 24px); }
+  .dog-info li { font-size: clamp(11px, 1.82vw, 14px); white-space: normal; line-height: 1.4; }
+  .cat-list { width: 90%; gap: 2%; }
+  .nari { flex-basis: 42%; padding: clamp(12px, 2vw, 20px) 8px; }
+  .nari-img { width: min(75%, 180px); margin-bottom: clamp(15px, 3.3vw, 25px); border-radius: 45% 45% 15px 15px; }
+  .nari h3 { font-size: clamp(18px, 2.86vw, 22px); }
+  .nari .cat-info li { font-size: clamp(12px, 1.82vw, 14px); }
+  .cat-right { gap: clamp(8px, 1.3vw, 10px); }
+  .cat-right .cat-img { width: 43%; height: clamp(110px, 18.2vw, 140px); }
+  .cat-right .cat-img img { width: min(150px, 100%); }
+  .cat-right .cat-text { width: 57%; }
+  .cat-right h3 { font-size: clamp(16px, 2.6vw, 20px); margin-left: 5px; }
+  .cat-right .cat-info { margin-left: 0; }
+  .cat-right .cat-info li { font-size: clamp(11px, 1.82vw, 14px); gap: 3px; line-height: 1.4; white-space: normal; }
+  .cat-right .cat-info li img { width: 14px; height: 14px; }
+  .cat-img::before { width: clamp(65px, 11vw, 85px); height: clamp(85px, 14.3vw, 110px); }
+  .adoption-story { width: 90%; }
+  .adoption-top { gap: 2%; }
+  .adoption-text { width: 35%; min-width: 0; }
+  .family-card { width: 63%; padding: clamp(12px, 2.6vw, 20px); }
+  .family-content { gap: clamp(8px, 2vw, 15px); }
+  .family-img img { width: clamp(80px, 15.625vw, 120px); height: clamp(110px, 20.8vw, 160px); }
+  .rumi-info { gap: clamp(5px, 1.5vw, 12px); }
+  .rumi-info li { font-size: clamp(10px, 1.82vw, 14px); }
+  .adopt-content { gap: 6px; }
+  .adopt-content > img { width: 45%; height: clamp(75px, 13vw, 100px); }
+  .adopt-info li:first-child { font-size: clamp(12px, 2.08vw, 16px); }
+  .adopt-info li:nth-child(2) { font-size: clamp(9px, 1.43vw, 11px); }
+  .adopt-info li:last-child { font-size: clamp(10px, 1.69vw, 13px); margin-top: 10px; }
+  .donate-top { width: 68%; }
+  .donate-top h2 { font-size: clamp(21px, 3.38vw, 26px); }
+  .donate-top p { font-size: clamp(12px, 2.08vw, 16px); line-height: 1.4; }
+  .donate-img { width: min(500px, 75%); }
+  .donate-bottom { top: auto; bottom: 65px; }
+}
+
+/* 모바일: 기존 550px 시안을 보존하며 내부 크기만 유동화 */
+@media (max-width: 550px) {
+  .head-inner { width: calc(100% - 30px); height: 80px; align-items: center; }
+  .head-inner > a { flex-shrink: 0; }
+  .head-inner > a > img { width: clamp(76px, 22vw, 110px); height: auto; margin-top: 0; }
+  .m-menu { display: none; }
+  .head-inner .etc { padding-top: 0; margin-left: auto; gap: clamp(8px, 3vw, 15px); align-items: center; }
+  .head-inner .etc li:first-child { display: none; }
+  .head-inner .etc li:nth-child(3)::after { display: none; }
+  .head-inner .etc li:nth-child(4) { opacity: 1; transform: none; }
+  .mobile-menu { right: 0; transform: translateX(100%); transition: transform .35s ease, visibility .35s ease; }
+  .mobile-menu.active { right: 0; transform: translateX(0); }
+  .m-gnb { gap: clamp(35px, 9vw, 60px); }
+  .animal-main { height: clamp(270px, 75vw, 320px); }
+  .animal-main .main-text { width: min(220px, 58vw); max-width: none; margin-left: 4%; }
+  .animal-main .main-text h1 { font-size: clamp(14px, 4vw, 16px); }
+  .animal-main .main-button { font-size: clamp(11px, 3.2vw, 13px); }
+  .adopt-text { padding-inline: 12px; box-sizing: border-box; }
+  .adopt-title h2 { font-size: clamp(17px, 5vw, 20px); margin-right: 0; }
+  .dog-info { width: max-content; max-width: 100%; }
+  .dog-info li { font-size: clamp(13px, 4vw, 16px); white-space: normal; }
+  .cat-right .cat-card { width: min(90%, 370px); }
+  .cat-right .cat-content { gap: 2%; }
+  .cat-right .cat-img { width: 48%; }
+  .cat-right .cat-text { width: 50%; }
+  .cat-right .cat-img img { width: min(140px, 100%); }
+  .cat-right .cat-info li { font-size: clamp(11px, 3.5vw, 14px); gap: 3px; }
+  .cat-right .cat-info li img { width: 14px; height: 14px; }
+  .family-card { width: min(350px, 100%); }
+  .family-img img { width: clamp(75px, 24vw, 95px); }
+  .rumi-info { gap: clamp(5px, 2vw, 8px); }
+  .rumi-info li { font-size: clamp(10px, 3vw, 12px); }
+  .adopt-card { width: min(370px, 100%); }
+  .adopt-content > img { width: clamp(82px, 27vw, 100px); flex-shrink: 0; }
+  .adopt-content { gap: clamp(12px, 5vw, 25px); }
+  .donation-zone { width: calc(100% - 28px); }
+  .donate-top p { white-space: normal; font-size: clamp(12px, 3.5vw, 14px); }
+  .donate-img { width: min(300px, 90%); }
+}
+
+@media (max-width: 390px) {
+  .head-inner { width: calc(100% - 24px); padding: 0; }
+  .head-inner .etc { gap: 6px; font-size: 12px; }
+  .head-inner .etc > li > a > img { width: 17px; }
+  .family-card { padding: 10px; }
+  .rumi-info { gap: 5px; }
+  .footer-inner { width: calc(100% - 32px); }
+}
