@@ -840,7 +840,7 @@ header{
     box-sizing: border-box;
 }
 .cat-card img {
-    transition:  transform 1,2s ease;
+    transition:  transform 1.2s ease;
 }
 .cat-card:hover .cat-content > img,
 .cat-card:hover .cat-img img {
@@ -1020,7 +1020,8 @@ header{
 }
 /*------------입양후기------------*/
 .adoption-story {
-    width: 1680px;
+    width: 90%;
+    max-width: 1620px;
     margin: 0 auto;
     padding: 150px 0;
     box-sizing: border-box;
@@ -1382,6 +1383,9 @@ header{
             height: auto;
             transition: all 0.5s;
         }
+        .footer-logo .white-logo{
+            display: none;
+        }
         .footer-logo ul{
             margin-top: 80px;
         }
@@ -1569,7 +1573,7 @@ header{
 
 
 /* ------------------------------태블릿--------------------- */
-        @media (max-width:768px){
+        @media (max-width:890px){
             .footer-inner{
             width: calc(100% - 80px);
             max-width: 768px;
@@ -1608,7 +1612,8 @@ header{
             .footer-call {
                 grid-column: 1;
                 grid-row: 2;
-                background: linear-gradient(to bottom, #FFFBF5, #fffbf527);
+                background: linear-gradient(to bottom, #FFFBF5, #fffbf562);
+                padding: 10px;
             }
             .footer-call ul{
                 gap: 5px;
@@ -1662,7 +1667,11 @@ header{
         }
 
 
-        
+        @media (max-width:768px){
+            .footer-newsletter{
+                display: none;
+            }
+        }
 
 
 
@@ -1679,7 +1688,7 @@ header{
             }
             .footer-top {
                 display: grid;
-                grid-template-columns: 1fr 1.5fr;
+                grid-template-columns: 1fr ;
                 row-gap: 15px;
             }
             /* ----------------로고------------- */
@@ -1692,9 +1701,15 @@ header{
             .footer-logo img{
                 display: none;
             }
+            .footer-logo .white-logo{
+                width: 120px;
+                display: block;
+                margin-top: 20px;
+            }
             .footer-logo ul li:nth-child(1) {
                 font-size: 1.5rem;
                 font-weight: 600;
+                margin-top: -5px;
             }
             /* ---------------전화--------------- */
             .footer-call{
@@ -1775,7 +1790,7 @@ header{
             }
             .footer-sns li:nth-child(3) img {
                 content: url("images/youtube-beige.png");
-            }
+            }   
             .footer-sns li:nth-child(4) img {
                 content: url("images/x-twitter-beige.png");
             }
@@ -1787,13 +1802,21 @@ header{
             }
         }
 
-
+        @media (max-width:410px){
+            .footer-inner{
+                width: min(330px, calc(100%));
+            }
+        }
 
 
 
         @media (max-width:390px){
+            .footer-logo ul li:nth-child(1) {
+                font-size: 1.2rem;
+                margin-left: 10px;
+            }
             .footer-inner{
-                width: min(295px, calc(100% - 32px));
+                width: min(310px, calc(100%));
             }
             .footer-call>ul>li{
                 font-size: 0.75rem;
@@ -1809,4 +1832,3 @@ header{
                 font-size: 0.8rem;
             }
         }
-

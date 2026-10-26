@@ -125,6 +125,7 @@
             justify-content: space-between;
             padding: 0 20px;
             font-size: clamp(0.8rem, 1vw, 1rem);
+            transition: all 0.3s;
         }
         .footer-newsletter:hover{
             cursor: pointer;
@@ -165,21 +166,11 @@
             margin: 40px;
         }
 
-
-
-
-
-
-
-
-
         @media (max-width:1300px){
             .footer-bottom{
                 bottom: 28px;
             }
         }
-
-
 
         @media (max-width:1130px){
             .footer-top{
