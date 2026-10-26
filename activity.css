@@ -375,6 +375,7 @@ header{
             gap: 60px;
             position: absolute;
             right: 0; top: 100px;
+            cursor: pointer;
         }
         .activities-bar{
             position: relative;
@@ -674,7 +675,7 @@ header{
             justify-content: center;
             align-items: center;
             background-color: #FFFBF5;
-            transition: background-color 0.3s;
+            transition: background-color 0.5s;
             cursor: pointer;
         }
         .research-card .research-title .research-more:hover{
