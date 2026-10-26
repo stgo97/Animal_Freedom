@@ -11,14 +11,14 @@ header{
     top: 0;
     z-index: 20;
 }
-.head-inner{
+.head-inner {
     width: min(90%, 1620px);
     height: 100px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     transition: all 0.5s;
-    overflow: hidden;
+    overflow: visible;
 }
 .m-menu{
     width: 50%;
@@ -45,20 +45,29 @@ header{
 .m-menu .gnb>li>a:hover{
     color: #F16669;
 }
-.m-menu .gnb .sub{
+.m-menu .gnb .sub {
     position: absolute;
-    top: 100px; 
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
-    color: #808080;
+    color: var(--gray);
     font-size: 1rem;
     z-index: 30;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 .m-menu .gnb .sub>li>a:hover{
     color: #151515;
     font-weight: 500;
 }
-.m-menu .gnb .sub li{
+.m-menu .gnb:hover .sub {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.m-menu .gnb .sub li {
     width: 150px;
     font-weight: 400;
     text-align: center;
@@ -77,7 +86,6 @@ header{
     transition: all 1s;
 }
 .etc li:nth-child(3){
-    
     transform: translateY(-2px);
 }
 .etc li:nth-child(4){
@@ -95,14 +103,12 @@ header{
     padding-right: 15px;
     border-right: 1px solid #8080804e;
 }
-
-
 /* ------------모바일-------------- */
-.dim {
+.dim{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 998;
@@ -110,13 +116,11 @@ header{
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
-
-.dim.active {
+.dim.active{
     opacity: 1;
     visibility: visible;
 }
-
-.mobile-menu {
+.mobile-menu{
     position: fixed;
     top: 0;
     right: 0;
@@ -132,58 +136,49 @@ header{
     box-shadow: -4px 0 20px rgba(0, 0, 0, 0.08);
     transition: right 0.35s;
     visibility: hidden;
-    transition: right 0.35s ease, visibility 0.35s ease;
+    transition: transform 0.35s ease, visibility 0.35s ease;
 }
-
-.mobile-menu.active {
+.mobile-menu.active{
     transform: translateX(0);
     visibility: visible;
 }
-
-.mobile-head {
+.mobile-head{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 25px;
 }
-
-.mobile-head .m-logo img {
+.mobile-head .m-logo img{
     height: 50px;
 }
-
-.mobile-head .m-util {
+.mobile-head .m-util{
     display: flex;
     align-items: center;
     gap: 16px;
 }
-
-.mobile-head .m-util .eng {
+.mobile-head .m-util .eng{
     font-weight: 500;
     font-size: 1rem;
     color: #151515;
 }
-
-.mobile-head .m-util button {
+.mobile-head .m-util button{
     background: none;
     border: none;
     cursor: pointer;
     display: flex;
     align-items: center;
 }
-
-.mobile-head .m-util button img {
+.mobile-head .m-util button img{
     width: 20px;
     height: 20px;
 }
-
-.m-gnb {
+.m-gnb{
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     gap: 80px;
 }
-
-.m-gnb>li {
+.m-gnb>li{
     width: 100%;
     text-align: right;
     padding-right: 12px;
@@ -191,29 +186,24 @@ header{
 .m-gnb>li>a:hover{
     color: #F16669;
 }
-
-.m-gnb .main-title {
+.m-gnb .main-title{
     display: block;
     font-size: 1.45rem;
     font-weight: 600;
     color: #151515;
     transition: color 0.25s ease;
 }
-
-.m-gnb>li.open .main-title {
+.m-gnb>li.open .main-title{
     color: #F16669;
 }
-
-.m-sub {
+.m-sub{
     display: none;
     padding: 16px 0 6px;
 }
-
-.m-sub li {
+.m-sub li{
     margin-bottom: 12px;
 }
-
-.m-sub li a {
+.m-sub li a{
     font-size: 1rem;
     font-weight: 500;
     color: #808080; 
@@ -222,18 +212,17 @@ header{
 .m-sub li a:hover{
     color: #151515;
 }
-
-
-/* -----------gnb End------------ */
-
+/* -----------반응형------------ */
 @media (max-width:1330px) {
     .etc li:nth-child(1){
         opacity: 0;
     }
 }
-@media (min-width:768px) {
-    .head-inner:hover{
+@media (min-width: 769px) {
+    header:has(.m-menu .gnb:hover) {
         height: 410px;
+        background-color: var(--cream);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
     }
 }
 @media (max-width:768px) {
@@ -242,7 +231,7 @@ header{
     }
     .m-menu .gnb{
         opacity: 0;
-    }
+    } 
     .m-gnb .main-title{
     font-size: 1.2rem;
     transition: color 0.25s ease;
@@ -264,12 +253,29 @@ header{
     .etc li:nth-child(4){
         opacity: 1;
     }
-    .m-gnb>li{
-        font-size: 80%;
+}
+@media (max-width:480px) {
+    .head-inner {
+    padding: 0 12px;
+    }
+    .head-inner> a>img {
+    width: 75px;
+    height: auto;
+    }
+    .head-inner .etc {
+    gap: 10px;
+    }
+    .head-inner .etc li:nth-child(3) {
+    padding-right: 10px;
+    }
+    .head-inner .etc li:nth-child(4) {
+        margin-left: 10px
+    }
+    .head-inner {
+    flex-wrap: nowrap;
+    align-items: center;
     }
 }
-
-
 @media (max-width:360px) {
     .head-inner {
         padding: 0 10px; 
@@ -289,10 +295,7 @@ header{
         width: 17px;
     }
     .etc li:nth-child(4){
-    transform: translateY(-2px);
-    }
-    .mobile-head{
-        max-width: 360px;
+        transform: translateY(-2px);
     }
     .mobile-head .m-util .eng{
         font-size: 95%;
