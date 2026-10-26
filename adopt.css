@@ -474,6 +474,9 @@ header{
     .etc li:nth-child(1){
         opacity: 0;
     }
+    .etc li:nth-child(4) {
+        opacity: 1;
+    }
 }
 @media (min-width:768px) {
     .head-inner:hover{
